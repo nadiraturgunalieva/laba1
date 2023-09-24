@@ -128,7 +128,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="laba1.cpp" />
     <ClCompile Include="task one.cpp" />
     <ClCompile Include="task two.cpp" />
   </ItemGroup>

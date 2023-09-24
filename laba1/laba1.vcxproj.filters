@@ -21,11 +21,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="laba1.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="task one.cpp">
-      <Filter>Исходные файлы\task one</Filter>
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="task two.cpp">
       <Filter>Исходные файлы\task two</Filter>
