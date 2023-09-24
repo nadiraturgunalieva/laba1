@@ -13,16 +13,22 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\task one">
+      <UniqueIdentifier>{0e281148-5cd5-4244-9004-88f321416853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\task two">
+      <UniqueIdentifier>{724858c9-803a-44b5-a79d-88b0e97c44cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="laba1.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="task one.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\task one</Filter>
     </ClCompile>
     <ClCompile Include="task two.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\task two</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
