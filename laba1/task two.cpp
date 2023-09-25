@@ -55,5 +55,11 @@ int main() {
 		}
 		std::cout << std::endl;
 	}
-	//освобождение
+	//освобождение выделенной памяти
+	for (int = 0; i < numRows: i++) {
+		delete[] fibTriangle[i];
+	}
+	delete[] fibTriangle;
+
+	return 0;
 }
