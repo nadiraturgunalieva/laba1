@@ -40,11 +40,16 @@ int main() {
 	}
 
 	//сортировка в алфавитном порядке
-	for (size_t i = 0; i < sortedStr.length(); i++) {
-		for (size_t j = i + 1; j < sortedStr.length(); j++) {
-			if (sortedStr[i] > sortedStr[j]) {
-				char temp =
+	for (size_t i = 0; i < sortedStr.length(); i++) {  //сортировка "пузырьком"(обменом); внешний цикл для каждого элемента
+		for (size_t j = i + 1; j < sortedStr.length(); j++) { //внутр. цикл начин. с элемента, след. за текущ, и проходит по остатку строки
+			if (sortedStr[i] > sortedStr[j]) { //на каждой итерации сравн. текущ. элемент sortedStr[i] со след. элементом sortedStr[j]
+				char temp = sortedStr[i]; // если текущ. больше след., то они меняются местами с помощью времен. перем. temp
+				sortedStr[i] = sortedStr[j];
+				result[j] = temp;
 			}
 		}
 	}
+
+	std::cout << "Отсортированная строка: " << sortedStr << std::endl;
+	return 0;
 }
