@@ -26,8 +26,21 @@
 int main() {
 	setlocale(LC_ALL, "Rus"); //для работы русского языка в консоли, всё работает 
 	/*но программа крашится, если вводить строку не на английском, а на русском, как исправить?*/
+
 	std::string input;
-
 	std::cout << "Введите строку: ";
+	std::getline(std::cin, input);
 
+	//удаление пробелов и пунктуационных знаков
+	std::string sortedStr;
+	for (char c : input) {
+		if (!std::isspace(c) && !std::ispunct(c)) {
+			sortedStr += std::tolower(c); //преобразование в нижний регистр и добавление к конечному результату
+		}
+	}
+
+	//сортировка в алфавитном порядке
+	for (size_t i = 0; i < sortedStr.length(); i++) {
+
+	}
 }
