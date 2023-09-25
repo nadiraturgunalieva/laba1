@@ -45,7 +45,7 @@ int main() {
 			if (sortedStr[i] > sortedStr[j]) { //на каждой итерации сравн. текущ. элемент sortedStr[i] со след. элементом sortedStr[j]
 				char temp = sortedStr[i]; // если текущ. больше след., то они меняются местами с помощью времен. перем. temp
 				sortedStr[i] = sortedStr[j];
-				result[j] = temp;
+				sortedStr[j] = temp;
 			}
 		}
 	}
