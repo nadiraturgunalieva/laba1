@@ -21,5 +21,27 @@
 
 int main() {
 	setlocale(LC_ALL, "Rus");
+	int numRows;
+
+	std::cout << "Введите количество строк треугольника Фибоначчи: ";
+	std::cin >> numRows;
+
+	//выделение памяти
+	int** fibTriangle = new int* [numRows];
+
+	//инициализация и заполнение
+	for (int i = 0; i < numRows; i++) {
+		fibTriangle[i] = new int[i + 1];
+		int* currentRow = fibTriangle[i];
+
+		currentRow[0] = currentRow[i] = 1; //первый и последний элемент каждой строки равен 1
+
+		for (int j = 1; j < i; j++) {
+			currentRow[j] = fibTriangle[i - 1][j - 1] + fibTriangle[i - 1][j];
+		}
+
+	}
+
+	//вывод
 
 }
