@@ -43,5 +43,17 @@ int main() {
 	}
 
 	//вывод
+	for (int = 0; i < numRows; i++) {
+		for (int k = 0; k < numRows - i - 1; k++) {
+			std::cout << " ";
+		}
 
+		int* currentRow = fibTriangle[i];
+
+		for (int j = 0; j <= i; j++) {
+			std::cout << currentRow[j] << " ";
+		}
+		std::cout << std::endl;
+	}
+	//освобождение
 }
