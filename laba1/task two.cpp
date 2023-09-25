@@ -43,7 +43,7 @@ int main() {
 	}
 
 	//вывод
-	for (int = 0; i < numRows; i++) {
+	for (int i = 0; i < numRows; i++) {
 		for (int k = 0; k < numRows - i - 1; k++) {
 			std::cout << " ";
 		}
@@ -57,7 +57,7 @@ int main() {
 	}
 
 	//освобождение выделенной памяти
-	for (int = 0; i < numRows: i++) {
+	for (int i = 0; i < numRows; i++) {
 		delete[] fibTriangle[i];
 	}
 	delete[] fibTriangle;
