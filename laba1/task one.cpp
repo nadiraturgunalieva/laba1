@@ -41,6 +41,10 @@ int main() {
 
 	//сортировка в алфавитном порядке
 	for (size_t i = 0; i < sortedStr.length(); i++) {
-
+		for (size_t j = i + 1; j < sortedStr.length(); j++) {
+			if (sortedStr[i] > sortedStr[j]) {
+				char temp =
+			}
+		}
 	}
 }
